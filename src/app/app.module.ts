@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// import { RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import {MatButtonModule, MatCheckboxModule, MatChipsModule, MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -9,18 +9,20 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { MenuComponent } from './menu/menu.component';
+import { ChildParentComponent } from './child-parent/child-parent.component';
 
 
-// const routes = [
-
-//   {pth:''  },
-// ]
+const routes = [
+  {path:'', component: AppComponent},
+  {path:'child-parent', component: ChildParentComponent},
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
-    MenuComponent
+    MenuComponent,
+    ChildParentComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,7 @@ import { MenuComponent } from './menu/menu.component';
     MatCheckboxModule, 
     MatChipsModule,
     MatToolbarModule,
-    // RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
