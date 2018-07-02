@@ -2,6 +2,7 @@
 import { Component, Input, OnChanges, SimpleChanges, SimpleChange } from '@angular/core';
 
 
+
 @Component({
   selector: 'child-component',
   templateUrl: './child.component.html',
@@ -10,7 +11,17 @@ import { Component, Input, OnChanges, SimpleChanges, SimpleChange } from '@angul
 
 // 2: modififed class to implement interface OnChanges
 export class ChildComponent implements OnChanges {
- @Input() count: number;
+//  @Input() count: number;
+
+// Property setter for tracking changes example 
+ private _count = 0;
+ @Input() 
+ set count(count: number) {
+   this._count = count;
+   console.log(count); 
+ }
+
+ get count(): number {return this._count}
 
 
  // 3: ngOnChanges method.
