@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Component Interaction Parent to Child';
+  title = 'Parent Component';
   Counter = 5;
 
   increment() {
