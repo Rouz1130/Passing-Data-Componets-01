@@ -8,7 +8,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
-import { MenuComponent } from './menu/menu.component';
+// import { MenuComponent } from './menu/menu.component';
 
 
 
@@ -21,7 +21,7 @@ import { MenuComponent } from './menu/menu.component';
   declarations: [
     AppComponent,
     ChildComponent,
-    MenuComponent,
+    // MenuComponent,
 
   ],
   imports: [
