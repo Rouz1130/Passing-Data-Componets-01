@@ -1,3 +1,4 @@
-mat-chip {
+mat-chip, mat-chip-list-stacked {
     max-width: 100px;
+
   }
