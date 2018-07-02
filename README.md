@@ -1,27 +1,15 @@
-# ParentToChildData
+# Passing Data from Components 01
+This is an example tutorial on how to pass data from parent to child Component. The Child Component decorates the property using the @Input annotation. In the Parent Component, we use property binding to bind it to the Property or method of Parent Component. Also if you view the commit message there is an example on tracking changes mad to the Input Property by using hooking ngOnChanges ife cycle hook. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+## Concepts
+* @Input Decorator
+* Property Binding
+* OnChanges LifeCycle Hook
 
-## Development server
+## Technologies Used
+Angular 5, Material Design
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+###
+June 26, 2018&nbsp; Rouz Majlessi
+<br/>
+www.rouzm.com
