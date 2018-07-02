@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Component Interaction Parent to Child';
+  Counter = 5;
+
+  increment() {
+    this.Counter++;
+  }
+
+  decrement() {
+    this.Counter--;
+  }
+
 }
